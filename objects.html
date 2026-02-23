@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid lightgray;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.contain {
+  object-fit: contain;
+}
+</style>
+</head>
+<body>
+
+<h3>Cover (crops to fill)</h3>
+<img class="cover" src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cover">
+
+<h3>Contain (fits inside)</h3>
+<img class="contain" src="https://www.w3schools.com/css/img_5terre.jpg" alt="Contain">
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hero-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 80% 20%;
+}
+</style>
+</head>
+<body>
+
+<img class="hero-img" src="https://www.w3schools.com/css/img_5terre.jpg" alt="Hero">
+<br>
+<img class="profile-img" src="https://www.w3schools.com/css/img_5terre.jpg" alt="Profile">
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.masked {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Masking</h2>
+<p>The image fades from visible to transparent:</p>
+<img class="masked" src="img_5terre.jpg" width="300" height="200">
+
+</body>
+</html>
